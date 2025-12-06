@@ -1,0 +1,75 @@
+{
+  "name": "Calorie Tracker Pro",
+  "short_name": "CaloriePro",
+  "description": "Track your nutrition with 2000+ international foods - Indian, Chinese, Spanish, Japanese, Thai, Italian and more!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#9333ea",
+  "theme_color": "#9333ea",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["health", "fitness", "food", "nutrition"],
+  "screenshots": [
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Calorie Tracker Mobile View"
+    },
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Calorie Tracker Desktop View"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Log Meal",
+      "short_name": "Log",
+      "description": "Quickly log a meal",
+      "url": "/?action=log",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "View Dashboard",
+      "short_name": "Dashboard",
+      "description": "View nutrition dashboard",
+      "url": "/?tab=dashboard",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ],
+  "display_override": ["standalone", "minimal-ui"],
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}

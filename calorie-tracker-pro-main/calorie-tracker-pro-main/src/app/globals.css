@@ -1,0 +1,178 @@
+/* Updated: 2025-12-06T06:50:18.913Z */
+/* Updated: 2025-11-30T08:39:51.760Z */
+/* Updated: 2025-11-30T08:38:58.931Z */
+/* Updated: 2025-11-27T13:18:28.264Z */
+/* Updated: 2025-11-09T07:11:51.541Z */
+/* Updated: 2025-11-07T09:20:04.271Z */
+/* Updated: 2025-10-26T07:02:36.048Z */
+/* Updated: 2025-10-26T05:55:10.765Z */
+/* Updated: 2025-10-26T05:48:51.769Z */
+/* Updated: 2025-10-26T05:20:00.243Z */
+/* Updated: 2025-10-26T03:32:30.351Z */
+/* Updated: 2025-10-26T02:49:04.428Z */
+/* Updated: 2025-10-25T15:15:38.041Z */
+/* Updated: 2025-10-25T14:59:27.352Z */
+/* Updated: 2025-10-25T14:53:38.102Z */
+/* Updated: 2025-10-25T14:17:24.248Z */
+/* Updated: 2025-10-25T14:01:15.801Z */
+/* Updated: 2025-10-25T13:04:07.136Z */
+/* Updated: 2025-10-25T12:16:06.618Z */
+/* Updated: 2025-10-25T05:13:57.293Z */
+/* Updated: 2025-10-25T03:41:56.495Z */
+/* Updated: 2025-10-25T03:38:59.194Z */
+/* Updated: 2025-10-25T03:38:38.256Z */
+/* Updated: 2025-10-25T03:37:56.643Z */
+/* Updated: 2025-10-25T03:36:36.974Z */
+/* Updated: 2025-10-24T16:40:39.754Z */
+/* Updated: 2025-10-24T16:31:29.465Z */
+/* Updated: 2025-10-24T15:22:41.648Z */
+/* Updated: 2025-10-24T15:16:52.584Z */
+/* Updated: 2025-10-24T15:09:45.920Z */
+/* Updated: 2025-10-24T13:03:32.414Z */
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.99 0.01 280);
+  --foreground: oklch(0.15 0.02 280);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0.02 280);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.02 280);
+  --primary: oklch(0.55 0.25 280);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.95 0.02 280);
+  --secondary-foreground: oklch(0.15 0.02 280);
+  --muted: oklch(0.96 0.01 280);
+  --muted-foreground: oklch(0.50 0.01 280);
+  --accent: oklch(0.94 0.03 280);
+  --accent-foreground: oklch(0.15 0.02 280);
+  --destructive: oklch(0.60 0.25 25);
+  --border: oklch(0.90 0.01 280);
+  --input: oklch(0.90 0.01 280);
+  --ring: oklch(0.55 0.25 280);
+  --chart-1: oklch(0.65 0.25 280);
+  --chart-2: oklch(0.60 0.22 220);
+  --chart-3: oklch(0.70 0.20 160);
+  --chart-4: oklch(0.68 0.24 320);
+  --chart-5: oklch(0.75 0.22 60);
+  --sidebar: oklch(0.98 0.01 280);
+  --sidebar-foreground: oklch(0.15 0.02 280);
+  --sidebar-primary: oklch(0.55 0.25 280);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.94 0.03 280);
+  --sidebar-accent-foreground: oklch(0.15 0.02 280);
+  --sidebar-border: oklch(0.90 0.01 280);
+  --sidebar-ring: oklch(0.55 0.25 280);
+}
+
+.dark {
+  --background: oklch(0.12 0.02 280);
+  --foreground: oklch(0.98 0.01 280);
+  --card: oklch(0.18 0.02 280);
+  --card-foreground: oklch(0.98 0.01 280);
+  --popover: oklch(0.18 0.02 280);
+  --popover-foreground: oklch(0.98 0.01 280);
+  --primary: oklch(0.75 0.20 280);
+  --primary-foreground: oklch(0.12 0.02 280);
+  --secondary: oklch(0.22 0.02 280);
+  --secondary-foreground: oklch(0.98 0.01 280);
+  --muted: oklch(0.22 0.02 280);
+  --muted-foreground: oklch(0.65 0.01 280);
+  --accent: oklch(0.25 0.03 280);
+  --accent-foreground: oklch(0.98 0.01 280);
+  --destructive: oklch(0.65 0.25 25);
+  --border: oklch(0.25 0.02 280);
+  --input: oklch(0.25 0.02 280);
+  --ring: oklch(0.75 0.20 280);
+  --chart-1: oklch(0.70 0.22 280);
+  --chart-2: oklch(0.65 0.20 220);
+  --chart-3: oklch(0.75 0.18 160);
+  --chart-4: oklch(0.72 0.22 320);
+  --chart-5: oklch(0.78 0.20 60);
+  --sidebar: oklch(0.18 0.02 280);
+  --sidebar-foreground: oklch(0.98 0.01 280);
+  --sidebar-primary: oklch(0.70 0.22 280);
+  --sidebar-primary-foreground: oklch(0.98 0.01 280);
+  --sidebar-accent: oklch(0.25 0.03 280);
+  --sidebar-accent-foreground: oklch(0.98 0.01 280);
+  --sidebar-border: oklch(0.25 0.02 280);
+  --sidebar-ring: oklch(0.75 0.20 280);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* PWA Android Optimizations */
+  html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  body {
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  input, textarea, select {
+    font-size: 16px;
+  }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
